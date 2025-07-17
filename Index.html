@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscription - 7 Minutes de Savoir</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eaf6ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #003366;
+    }
+
+    p {
+      text-align: center;
+      color: #444;
+      font-size: 15px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      background-color: #25D366;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1ebd5a;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      margin-top: 25px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>7 Minutes de Savoir</h2>
+    <p>📅 Session du 24 Juillet au 7 Août 2025<br>🎯 Thème : CV optimisé pour un poste</p>
+
+    <form id="inscriptionForm">
+      <label>Nom complet</label>
+      <input type="text" id="nom" placeholder="Ex : Arnaud Bako" required>
+
+      <label>Pays</label>
+      <select id="pays" required>
+        <option value="">-- Sélectionne ton pays --</option>
+        <option value="Tchad">Tchad</option>
+        <option value="Cameroun">Cameroun</option>
+        <option value="Côte d’Ivoire">Côte d’Ivoire</option>
+        <option value="Sénégal">Sénégal</option>
+        <option value="Burkina Faso">Burkina Faso</option>
+        <option value="Autre">Autre</option>
+      </select>
+
+      <label>Numéro WhatsApp</label>
+      <input type="tel" id="telephone" placeholder="+235 66 00 00 00" required>
+
+      <button type="button" onclick="envoyerWhatsApp()">Je m’inscris via WhatsApp 📲</button>
+    </form>
+
+    <div class="footer">
+      Propulsé par Benane Start-Up 🚀
+    </div>
+  </div>
+
+  <script>
+    function envoyerWhatsApp() {
+      var nom = document.getElementById("nom").value.trim();
+      var pays = document.getElementById("pays").value;
+      var tel = document.getElementById("telephone").value.trim();
+
+      if(nom && pays && tel) {
+        var message = "Bonjour 👋,%0AJe souhaite m'inscrire à la session *7 Minutes de Savoir* 📚%0A%0A👤 Nom : " + nom + "%0A🌍 Pays : " + pays + "%0A📞 WhatsApp : " + tel + "%0A%0AMerci 🙏";
+        var url = "https://wa.me/message/DZ3Q5TV5AMYMH1?text=" + message;
+        window.open(url, '_blank');
+      } else {
+        alert("Merci de remplir tous les champs obligatoires.");
+      }
+    }
+  </script>
+
+</body>
+</html>
