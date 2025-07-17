@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Starter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #002244;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+
+    nav a {
+      margin: 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 30px;
+      background: white;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      animation: zoomIn 1.5s ease;
+    }
+
+    h2 {
+      color: #002244;
+    }
+
+    h3 {
+      margin-top: 20px;
+      color: #003366;
+    }
+
+    .button {
+      background: #00b894;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 15px;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background: #019875;
+    }
+
+    .whatsapp-button {
+      background: #25D366;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+
+    .whatsapp-button:hover {
+      background: #1ebe57;
+    }
+
+    .temoignage {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-left: 5px solid #00b894;
+      background: #f9f9f9;
+    }
+
+    footer {
+      background: #002244;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Job Starter</h1>
+    <nav>
+      <a href="#services">Nos Services</a>
+      <a href="#temoignages">Témoignages</a>
+      <a href="#fondateur">Mot du Fondateur</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="services">
+    <h2>Nos Services</h2>
+    <h3>Formations NUMÉRIQUE de A à Z</h3>
+    <ul>
+      <li>💡Outils numériques pour candidater efficacement en ligne</li>
+    </ul>
+
+    <h3>Coachings d'emploi</h3>
+    <ul>
+      <li>CV optimisés pour un poste</li>
+      <li>Lettres de motivation percutantes</li>
+      <li>E-mails professionnels pour les candidatures</li>
+      <li>Coachings pour tests écrits</li>
+      <li>Simulations de tests d'emplois</li>
+      <li>Coachings pour entretiens</li>
+      <li>Simulations d'entretiens d'embauche</li>
+    </ul>
+
+    <a href="#" class="button">Commencer maintenant</a><br/>
+    <a href="https://wa.me/message/DZ3Q5TV5AMYMH1" class="whatsapp-button" target="_blank">📲 Contact WhatsApp : +235 60 94 91 71</a>
+  </section>
+
+  <section id="temoignages">
+    <h2>TÉMOIGNAGES</h2>
+
+    <div class="temoignage">
+      <strong>Dr ALI ADOUM</strong><br/>
+      "La simulation d'entretien d'embauche et Test écrit m'ont permis d'être très à l'aise. Aujourd'hui je travaille chez MSF France."
+    </div>
+
+    <div class="temoignage">
+      <strong>M. NDIGRAMADJI Innocent</strong><br/>
+      "Mon passage à Job Starter a été une ouverture professionnelle dans tous les sens. Aujourd'hui je travaille chez AJFJT comme chargé d'écoute."
+    </div>
+
+    <div class="temoignage">
+      <strong>M. Christophe NGUEROSBAYE</strong><br/>
+      "Benane Start-Up est un propulseur numérique en Afrique. Aujourd'hui j'ai lancé mon business en ligne grâce à cette entreprise."
+    </div>
+
+    <div class="temoignage">
+      <strong>M. Essoua Pinabeye</strong><br/>
+      "Le coaching d'emploi chez Job Starter de Benane Start-Up m'a simplement déchargé de mes fardeaux. Aujourd'hui, je les remercie."
+    </div>
+  </section>
+
+  <section id="fondateur">
+    <h2>Mot du Fondateur</h2>
+    <p><strong>M. Alexandre BENANE</strong></p>
+    <p>
+      Mesdames et Messieurs,<br/>
+      Chers partenaires, collaborateurs, jeunes engagés,
+    </p>
+    <p>
+      Je me tiens devant vous aujourd’hui avec une conviction forte : <em>l’Afrique regorge de talents, d’idées et d’une jeunesse prête à relever les défis du XXIe siècle.</em>
+    </p>
+    <p>
+      Chez Benane Start-Up, notre vision est simple mais ambitieuse : <strong>construire une Afrique où chaque jeune trouve sa place grâce au numérique, à l’employabilité et à l’autonomisation</strong>.
+    </p>
+    <p>
+      Nous avons commencé petit, sur le terrain, à répondre concrètement aux besoins de nos premiers clients : corriger des CV, proposer des formations pratiques, accompagner ceux qui ont soif de réussite.
+    </p>
+    <p>
+      Mais cela ne suffit pas. Les défis exigent de nous plus d’innovation, plus de rigueur, plus de courage. Il s’agit de bâtir des carrières solides, des entreprises durables, des communautés fortes.
+    </p>
+    <p>
+      Notre mission : faire du numérique un levier d’emploi, de la formation un outil d’émancipation, et de l’autonomie une réalité pour chaque jeune africain.
+    </p>
+    <p>
+      Merci à ceux qui croient en cette vision. Ensemble, nous bâtissons l’Afrique de demain.
+    </p>
+    <p><strong>Benane Start-Up – Innovation et développement au service de la jeunesse.</strong></p>
+  </section>
+
+  <footer>
+    © Benane Start-Up 2025 | Ta vie professionnelle commence ici !
+  </footer>
+
+</body>
+</html>
